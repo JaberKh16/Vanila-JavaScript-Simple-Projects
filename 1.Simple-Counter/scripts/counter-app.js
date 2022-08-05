@@ -5,8 +5,8 @@
 'use strict';
 
 // getting input 
-let countInitial = document.getElementById('counter-input');
-let countValue = parseInt(countInitial.value);
+let countInitialInput = document.getElementById('counter-input');
+let countValue = parseInt(countInitialInput.value);
 
 // getting buttons
 const buttons = document.querySelectorAll('.btn') // returns a NodeList
@@ -35,16 +35,16 @@ buttons.forEach(function(btn){
 
         // Changing the color for count values on different button clicks
         if(countValue > 0){
-            countInitial.style.color = 'green';
+            countInitialInput.style.color = 'green';
         }
         if(countValue < 0){
-            countInitial.style.color = 'red';
+            countInitialInput.style.color = 'red';
         }
         if(countValue == 0){
-            countInitial.style.color = 'black';
+            countInitialInput.style.color = 'black';
         }
 
         // setting the value for counter
-        countInitial.value = countValue;
+        countInitialInput.value = countValue;
     })
-})
+});
