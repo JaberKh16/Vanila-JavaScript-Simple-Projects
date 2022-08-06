@@ -1,11 +1,13 @@
 /*
-    Color Filterization App
+    Color Filterization App: Random Color Filterization
 */
 
+// defining the 'use strict' statement
 'use strict';
 
-// setting the default RGB colors
-const defaultColors = ['green', 'blue', 'red'];
+
+// setting the all the avaible hex colors
+const colors = [0, 1, 2, 3, 4, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 
 // getting the button
 const button = document.getElementById('color-button');
@@ -20,8 +22,17 @@ button.addEventListener('click', function(event){
     // generating random number from 0 to 2 because there are 3items in "defaultColor" array
     const randomColor = getRandomNumber(); // calling the getDefaultColor() to get the colors
     // document.body.style.backgroundColor = defaultColors[randomColor];
+    
+    // setting the hex color symbol which has pound sign '#'
+    const hexSymbol = '#';
+
+    // getting the backgroundWindow which returns a HTMLCollection
     const backgroundWindow = document.getElementsByClassName('background-window');
-    console.log(backgroundWindow);
+    Array.from(backgroundWindow).forEach(colorElement => {
+        // changing the background color for each element of HTMLCollection
+        colorElement.style.backgroundColor = defaultColors[randomColor];
+    });
+    
     // colorOption.textContent = defaultColors[randomColor]
 ;});
 

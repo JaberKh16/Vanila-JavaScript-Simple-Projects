@@ -78,8 +78,9 @@ div > .background-window{
     border-radius: 5px;
     border: 2px solid blue;
     position: relative;
+    width: 60%;
     top: 74%;
-    left: 30%;
+    left: 22%;
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
@@ -90,6 +91,11 @@ div > .background-window{
 .background-window button:hover{
     background-color:#303468;
     color: #96979e;
+}
+
+
+.color-button__generate{
+    
 }
 
 .container > .color-title {
