@@ -66,7 +66,7 @@ body{
     margin: 0px;
 } */
 
-div > #background-button{
+div > .background-window{
     width: 90%;
     height: 50vh;
     border: 2px solid #868282;
@@ -74,7 +74,7 @@ div > #background-button{
     display: inline-block;
 }
 
-#background-button  button{
+.background-window  button{
     border-radius: 5px;
     border: 2px solid blue;
     position: relative;
@@ -87,7 +87,7 @@ div > #background-button{
     color: #fff;
 }
 
-#background-button button:hover{
+.background-window button:hover{
     background-color:#303468;
     color: #96979e;
 }
