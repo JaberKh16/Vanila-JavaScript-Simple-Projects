@@ -66,7 +66,7 @@ body{
     margin: 0px;
 } */
 
-div > #color-background{
+div > #background-button{
     width: 90%;
     height: 50vh;
     border: 2px solid #868282;
@@ -74,11 +74,30 @@ div > #color-background{
     display: inline-block;
 }
 
-#value > h2{
+#background-button  button{
+    border-radius: 5px;
+    border: 2px solid blue;
+    position: relative;
+    top: 74%;
+    left: 30%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#96979e;
+    color: #fff;
+}
+
+#background-button button:hover{
+    background-color:#303468;
+    color: #96979e;
+}
+
+.container > .color-title {
     text-align: center;
     display: inline;
     padding: 20px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
     background: radial-gradient(circle at top left, #20434F 46%, #CF5586 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
