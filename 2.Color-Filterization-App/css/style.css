@@ -10,7 +10,7 @@ body{
     width: 30rem;
     margin: 0px;
     position: absolute;
-    top: 22%;
+    top: 10%;
     left: 30%;
 }
 
@@ -18,13 +18,14 @@ body{
     font-size: 35px;
     font-weight: bold;
     text-align: center;
-    color: #1a0201;
+    color: #ffffff;
     background-color: #797777;
     margin: 0px;
     padding: 50px 20px;
     height: 10px;
-    background-image:url('https://acrylgiessen.com/wp-content/uploads/2020/05/mixing-colors.jpg');
-    background-repeat: no-repeat;
+    /* background-image:url('https://acrylgiessen.com/wp-content/uploads/2020/05/mixing-colors.jpg');
+    background-repeat: no-repeat; */
+    background: linear-gradient(to top, #121FCF 0%, #CF1512 100%);
 }
 
 .container > nav{
@@ -58,22 +59,27 @@ body{
     color:forestgreen;
 }
 
-img{
+/* img{
     width: 60%;
     height: 30%;
     border: 1px solid black;
     margin: 0px;
-}
+} */
 
 div > #color-background{
-    width: 60%;
+    width: 90%;
     height: 50vh;
     border: 2px solid #868282;
     margin: 20px;
-    display:inline-block;
-
+    display: inline-block;
 }
 
-.div span{
+#value > h2{
     text-align: center;
+    display: inline;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    background: radial-gradient(circle at top left, #20434F 46%, #CF5586 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
