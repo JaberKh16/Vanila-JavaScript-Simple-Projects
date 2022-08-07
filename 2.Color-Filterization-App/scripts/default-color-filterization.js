@@ -13,7 +13,7 @@ const button = document.getElementById('color-button');
 // console.log(button); // returns the button itself
 
 // getting the color value
-const colorOption = document.getElementsByClassName('color-value');
+const colorValue = document.getElementsByClassName('color-value');
 // console.log(colorOption); // returns a HTMLCollection
 
 // including the event on clicking button
@@ -30,8 +30,8 @@ button.addEventListener('click', function(event){
     });
     
     // 
-    Array.from(colorOption).forEach(colorValue=>{
-        colorValue.innerText = defaultColors[randomColor].toUpperCase();
+    Array.from(colorValue).forEach(colorLabel=>{
+        colorLabel.innerText = defaultColors[randomColor].toUpperCase();
         // button.innerText = "Generating....";
         // if(button.innerText === "Generating...."){
         //     button.innerText = colorValue.parentElement.parentElement
@@ -40,7 +40,7 @@ button.addEventListener('click', function(event){
         // }
     })
     
-    console.log(colorOption)
+    // console.log(colorLabel); // to the color label
 ;});
 
 // to generate value between 0 to 2
