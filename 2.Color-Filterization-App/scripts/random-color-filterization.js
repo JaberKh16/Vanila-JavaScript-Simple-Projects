@@ -42,7 +42,7 @@ button.addEventListener('click', function(){
     // to get the color label in the background labeling
     Array.from(colorValue).forEach(colorLabel=>{
         colorLabel.innerText = hexColors;
-        console.log(colorLabel)
+        // console.log(colorLabel);
     }); 
 ;});
 
