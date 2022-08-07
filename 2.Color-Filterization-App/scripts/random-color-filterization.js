@@ -18,20 +18,19 @@ const colorValue = document.getElementsByClassName('color-value');
 // console.log(colorOption); // returns a HTMLCollection
 
 // including the event on clicking button
-button.addEventListener('click', function(event){
-    // generating random number from 0 to 2 because there are 3items in "defaultColor" array
-    const randomColor = getRandomNumber(); // calling the getDefaultColor() to get the colors
-    // document.body.style.backgroundColor = defaultColors[randomColor];
+button.addEventListener('click', function(){
     
     // setting the hex color symbol which has pound sign '#'
     let hexSymbol = '#';
-    let hexColors = " " + hexSymbol; // to store the hex colors
+    let hexColors = " " + hexSymbol; // to store the hex colors starting with "#"
 
     // though hexcolor has 6 digits in it
     for(let i = 0; i<6; i++){
-        hexColors += colorsOption[randomColor]
+        // single getRandomNumber() invokation gets a single element from the 'colorsOptionn'
+        const randomColor = getRandomNumber(); 
+        hexColors += colorsOption[randomColor];
     };
-    console.log(hexColors); // to see the generated hex colors
+    // console.log(hexColors); // to see the generated hex colors
 
     // getting the backgroundWindow which returns a HTMLCollection
     const backgroundWindow = document.getElementsByClassName('background-window');
