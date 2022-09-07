@@ -44,5 +44,5 @@ buttonClicked[0].addEventListener('click', (event)=>{
 
     const simpleInterest = calculatedInterest(principalAmount, noOfYears, rateOfInterest);
     document.getElementById('calculated-result').innerText = simpleInterest;
-})
+});
 
