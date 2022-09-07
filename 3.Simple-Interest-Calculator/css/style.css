@@ -1,0 +1,44 @@
+.container{
+    margin: 60px 180px;
+    padding:20px 10px;
+    border: 2px solid #1e2f8f;
+    width: 70vw;
+    background-color:#e5e9ff;
+}
+
+.container > .row{
+    margin: 20px 30px;
+    padding: 10px 20px;
+    border: 2px solid #494c5c;
+    background-color:#8a8a71;
+}
+
+
+.title{
+    color: #0c1952;
+    text-align: left;
+    background-color:#c2c1c1;
+    padding: 10px 10px;
+    margin: auto 10px;
+    position: relative;
+    left: 14vw;
+    border-radius: 10px;
+}
+
+input{
+    color:#07145f;
+}
+
+.btn{
+    background-color:#030829;
+    color: #c2c1c1;
+    outline: none;
+}
+
+.btn:hover{
+    background-color:#032507;
+}
+
+.result-class{
+    color: #c2c1c1;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Header Section-->
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="title">Simple Interest Calculator</h3>
+            </div>
+        </div>
+        <!--Header Section-->
+        <!--Form Section-->
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="principal-amount" class="form-group">Principal Amount</label>
+                        <input type="text" class="form-control" id="principal-amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="no-of-years" class="form-group">No. Of Years</label>
+                        <input type="text" class="form-control" id="no-of-years">
+                    </div>
+                    <div class="form-group">
+                        <label for="rate-of-interest" class="form-group">Rate Of Interest</label>
+                        <input type="text" class="form-control" id="rate-of-interest">
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Click To Calculate</button>
+                </form>
+            </div>
+        </div>
+        <!--Form Section-->
+        <br>
+        <!--Result Section-->
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="result-class" id="calculated-result">Total Interest is: $</h3>
+            </div>
+        </div>
+        <!--Result Section-->
+    </div>
+
+    <script src="../scirpt/simple-interest-calculator.js"></script>
+</body>
+</html>
