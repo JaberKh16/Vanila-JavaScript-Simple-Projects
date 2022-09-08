@@ -14,7 +14,7 @@ enrollmentButton.addEventListener('click', function(event){
 
 function expiredTimer(){
     // getTime() returns a no of miliseconds since Jan 1, 1970 midnight and a specified date
-    const endTimer = new Date("September 9, 2022 10:34:00").getTime();
+    const endTimer = new Date("September 8, 2022 11:40:00").getTime();
     // console.log(endTimer);
     const startTimer = new Date().getTime();
     // console.log(startTimer); 
@@ -25,7 +25,7 @@ function expiredTimer(){
     console.log(hours);
     const minutes = Math.floor(differentBetweenTimer % (60*60*1000) / (60*1000));
     console.log(minutes);
-    const seconds = Math.floor(differentBetweenTimer % (60*60*1000) / 1000);
+    const seconds = Math.floor(differentBetweenTimer % (60*1000) / 1000);
     console.log(seconds);
 
     creatingTimerEventSection(hours, minutes, seconds);
@@ -48,8 +48,11 @@ function creatingTimerEventSection(hours, minutes, seconds){
     timerDivElement.appendChild(timerHeadingElement);
     // appending the 'textNodeInsidetimerHeadingElement' inside the 'timerHeadingElement'
     timerHeadingElement.appendChild(textNodeInsidetimerHeadingElement);
+    
     const selectingCardBody = document.getElementsByClassName('card-body');
     const gettingCardBodyLastElementChild = selectingCardBody[0].lastElementChild;
-    console.log(gettingCardBodyLastElementChild);
+    // console.log(gettingCardBodyLastElementChild);
     console.log(gettingCardBodyLastElementChild.insertAdjacentElement( 'afterend', timerDivElement));
+    const generatedHeadingSectionContent = gettingCardBodyLastElementChild.insertAdjacentElement( 'afterend', timerDivElement);
+    timerHeadingElement.innerText = hours + ':' + minutes + ':' + seconds;    
 }
