@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
-.
+.section-of__card{
+    margin: 40px 400px;
+    border: 2px solid #ccc;
+    width: calc(30%);
+    background-color: #454a5d;
+}
+
+.card{
+    margin: 40px 60px;
+}
