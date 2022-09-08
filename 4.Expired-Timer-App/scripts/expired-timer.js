@@ -28,5 +28,28 @@ function expiredTimer(){
     const seconds = Math.floor(differentBetweenTimer % (60*60*1000) / 1000);
     console.log(seconds);
 
-    
+    creatingTimerEventSection(hours, minutes, seconds);
+
+}
+
+function creatingTimerEventSection(hours, minutes, seconds){
+    const timerDivElement = document.createElement('div');
+    const timerHeadingElement = document.createElement('h3');
+    console.log(timerHeadingElement);
+    console.log(timerDivElement);
+    const textNodeInsidetimerHeadingElement = document.createTextNode('Timer');
+
+    // setting some default attributes to those elements
+    timerDivElement.setAttribute('class', 'timer-div');
+    timerDivElement.classList.add('performChangesToDiv');
+    timerHeadingElement.classList.add('performChangesToHeading');
+
+    // appending the 'timerHeadingElement' inside the 'timerDivElement'
+    timerDivElement.appendChild(timerHeadingElement);
+    // appending the 'textNodeInsidetimerHeadingElement' inside the 'timerHeadingElement'
+    timerHeadingElement.appendChild(textNodeInsidetimerHeadingElement);
+    const selectingCardBody = document.getElementsByClassName('card-body');
+    const gettingCardBodyLastElementChild = selectingCardBody[0].lastElementChild;
+    console.log(gettingCardBodyLastElementChild);
+    console.log(gettingCardBodyLastElementChild.insertAdjacentElement( 'afterend', timerDivElement));
 }

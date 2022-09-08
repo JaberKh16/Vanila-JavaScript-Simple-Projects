@@ -16,6 +16,12 @@
     margin: 40px 60px;
 }
 
+.card img{
+    height: 200px;
+    outline: 2px solid #454a5d;
+    padding: 3px 6px;
+}
+
 .card-title{
     padding: 10px 6px;
     color: #07082d;
@@ -50,4 +56,22 @@
     80%{
         opacity: 0.2;
     }
+}
+
+.performChangesToDiv{
+    margin: 10px 6px;
+    padding: 5px 5px;
+}
+
+.performChangesToHeading{
+    padding: 10px 10px;
+    color: #e1e1e6;
+    text-align: center;
+    background-color:#15163a;
+    border-radius: 150px 55px;
+    -webkit-border-radius: 150px 55px;
+    -moz-border-radius: 150px 55px;
+    -ms-border-radius: 150px 55px;
+    -o-border-radius: 150px 55px;
+    outline: none;
 }
