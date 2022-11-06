@@ -12,7 +12,7 @@ function getDaysInfo(){
 
     // if remainingDays less than 0 then remove the annoucement
     if(remainingDays <=0){
-        document.getElementById("container").style.cssText = "display:none";
+        document.getElementsByClassName("container")[0].style.cssText = "display:none";
     }
 }
 
