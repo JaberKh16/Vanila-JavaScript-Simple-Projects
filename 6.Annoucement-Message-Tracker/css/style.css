@@ -5,16 +5,51 @@
 }
 
 .container{
-    background-color: #6d6c22;
+    background-color: #6d6c22fb;
     text-align:center;
     padding:20px;
 }
 
 .first-text{
-    font-size:20px;
+    font-size:30px;
     color:white;
+}
+
+.first-text:last-child(2){
+    font-size: 10px;
 }
 
 .second-text{
     padding-top:5px;
+    color: #e40b1d9c;
+}
+
+.second-text > strong{
+    font-size:30px;
+    font-weight:bold;
+}
+
+span{
+    font-size: 20px;
+}
+
+
+.blinking-text{
+    animation: blinker 1s linear infinite;
+    -webkit-animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.2;
+    }
 }

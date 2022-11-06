@@ -1,6 +1,6 @@
 function getTimerInfo(){
     const timer = new Date();
-    document.getElementById("clock").innerHTML = timer.toLocalTimeString();
+    document.getElementById("clock").innerHTML = timer.toLocaleTimeString();
 }
 
 function getDaysInfo(){
@@ -9,6 +9,11 @@ function getDaysInfo(){
     const endDate = 7;
     const remainingDays = endDate - startDate;
     document.getElementById("remaining-days").innerHTML = remainingDays+ '' + 'days left';
+
+    // if remainingDays less than 0 then remove the annoucement
+    if(remainingDays <=0){
+        document.getElementById("container").style.cssText = "display:none";
+    }
 }
 
 // setting interval so that time changes in every 1sec
